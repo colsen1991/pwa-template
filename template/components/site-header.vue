@@ -3,7 +3,7 @@
     <div class="container">
       <div class="navbar-brand">
         <nuxt-link class="navbar-item" to="/">
-          <img aria-label="Logo" alt="{{ site_name " src="~/assets/img/icon.png">
+          <img aria-label="Logo" alt="Site Logo" src="~/assets/img/logo.png">
         </nuxt-link>
 
         <div

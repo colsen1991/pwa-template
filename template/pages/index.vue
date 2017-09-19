@@ -4,7 +4,7 @@
       <div class="hero-body">
         <div class="container">
           <header>
-            <h1>PWA Plus template</h1>
+            <h1 class="title">PWA Plus template</h1>
           </header>
 
           <div class="content is-medium">
@@ -25,7 +25,7 @@
       <div class="hero-body">
         <div class="container">
           <header>
-            <h2>Lorem</h2>
+            <h2 class="title">Lorem</h2>
           </header>
 
           <div class="content is-medium">
@@ -62,7 +62,7 @@
       <div class="hero-body">
         <div class="container">
           <header>
-            <h2>Sit</h2>
+            <h2 class="title">Sit</h2>
           </header>
 
           <div class="content is-medium">
@@ -76,16 +76,3 @@
     </section>
   </div>
 </template>
-
-<script>
-  export default {
-    head: {
-      title: 'Forsiden',
-      link: [ { rel: 'canonical', href: '{{ site_domain }}' } ],
-      meta: [
-        { name: 'title', content: 'Forsiden - {{ site_name }}' },
-        { property: 'og:title', content: 'Forsiden - {{ site_name }}' }
-      ]
-    }
-  }
-</script>

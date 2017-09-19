@@ -21,6 +21,11 @@ module.exports = {
     '@nuxtjs/sitemap'
   ],
   build: {
+    postcss: {
+      plugins: {
+        'postcss-custom-properties': false
+      }
+    },
     extractCSS: true,
     vendor: [
       'buefy',
@@ -33,6 +38,7 @@ module.exports = {
   ],
   head: {
     htmlAttrs: { lang: '{{ locale }}' },
+    title: 'Forsiden',
     titleTemplate: '%s - {{ site_name }}',
     script: [ { src: 'https://use.fontawesome.com/992cf8b5f9.js', type: 'text/javascript', async: true } ],
     link: [
