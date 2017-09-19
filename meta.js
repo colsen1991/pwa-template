@@ -13,37 +13,37 @@ module.exports = {
     },
     site_name: {
       'type': 'string',
-      'required': true,
-      'message': 'Website name (visible to the user)'
+      'message': 'Visible name',
+      'default': 'PWA Plus'
     },
     site_short_name: {
       'type': 'string',
-      'required': true,
-      'message': 'Website short name (visible to the user)'
+      'message': 'Visible short name',
+      'default': 'PWAP'
     },
     description: {
       'type': 'string',
-      'required': true,
       'message': 'Project description',
+      'default': 'PWA Plus project'
     },
     site_description: {
       'type': 'string',
-      'required': true,
-      'message': 'Website description (visible to the user)',
+      'message': 'Visible description',
+      'default': 'Site w/nuxt and PWA Plus template'
     },
     author: {
       'type': 'string',
       'required': true,
-      'message': 'Author NAME <EMAIL> (HOMEPAGE)'
+      'message': 'Author'
     },
     author_homepage: {
       'type': 'string',
-      'message': 'Author homepage or profile url',
+      'message': 'Author homepage',
       'default': 'https://about.me'
     },
     site_domain: {
       'type': 'string',
-      'message': 'Site domain (https://www.*.* etc)',
+      'message': 'Site domain',
       'default': 'https://www.example.com'
     },
     locale: {
