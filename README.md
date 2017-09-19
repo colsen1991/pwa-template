@@ -9,7 +9,7 @@ A [Nuxt.js](https://github.com/nuxt/nuxt.js) PWA template without the distractio
 This is a project template for [vue-cli](https://github.com/vuejs/vue-cli).
 
 ``` bash
-$ vue init nuxt-community/pwa-template my-project  
+$ vue init colsen1991/pwa-template-plus my-project  
 $ cd my-project                     
 # install dependencies
 $ npm install # Or yarn install
