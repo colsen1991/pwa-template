@@ -38,7 +38,7 @@ module.exports = {
     link: [
       { rel: 'favicon', href: '/favicon.ico' },
       { rel: 'author', href: '/humans.txt' },
-      { rel: 'me', href: '{{ author_homepage', type: 'text/html' }
+      { rel: 'me', href: '{{ author_homepage }}', type: 'text/html' }
     ],
     meta: [
       { name: 'title', content: '{{ site_name }}' },
