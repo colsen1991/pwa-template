@@ -21,3 +21,8 @@ dist
 static/manifest*.json
 static/sw.js
 static/workbox-sw*.js
+static/data
+static/sitemap.xml
+
+# Generated .map files
+*.map

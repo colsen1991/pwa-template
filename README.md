@@ -1,10 +1,8 @@
-# PWA
+# PWA Plus
 
 A [Nuxt.js](https://github.com/nuxt/nuxt.js) PWA template without the distraction of a complicated development environment.
 
-Live demo: [coming soon]
-
-**This template is still under development, feedback welcome!**
+**This is a fork that is tailored to my needs and preferences.**
 
 ## Installation
 
