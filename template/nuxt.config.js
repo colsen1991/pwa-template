@@ -14,7 +14,8 @@ module.exports = {
     display: 'standalone',
     description: '{{ site_description }}',
     orientation: 'any',
-    theme_color: '#fff'
+    theme_color: '#fff',
+    background_color: '#fff'
   },
   modules: [
     '@nuxtjs/pwa',
@@ -56,7 +57,7 @@ module.exports = {
       { property: 'og:image', content: '{{ site_domain }}/logo.png' },
       { property: 'og:locale', content: '{{ locale }}' },
       { property: 'og:site_name', content: '{{ site_name}}' },
-      { name: 'robots', content: 'noindex' /* TODO Change me and static/robots.txt before prod */ }
+      { name: 'robots', content: 'noindex' }
     ]
   },
   generate: {
