@@ -2,7 +2,7 @@ const isStatic = !!process.env.STATIC
 
 module.exports = {
   css: [
-    { src: './assets/style/other.scss', lang: 'sass' },
+    { src: './assets/style/bulma-alterations.scss', lang: 'sass' },
     { src: './assets/style/global.scss', lang: 'sass' }
   ],
   loading: {
