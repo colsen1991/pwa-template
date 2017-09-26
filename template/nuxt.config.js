@@ -29,7 +29,6 @@ module.exports = {
     },
     extractCSS: true,
     vendor: [
-      'buefy',
       'whatwg-fetch'
     ]
   },
@@ -43,7 +42,7 @@ module.exports = {
     titleTemplate: '%s - {{ site_name }}',
     script: [ { src: 'https://use.fontawesome.com/992cf8b5f9.js', type: 'text/javascript', async: true } ],
     link: [
-      { rel: 'favicon', href: '/favicon.ico' },
+      { rel: 'shortcut icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'author', href: '/humans.txt' },
       { rel: 'me', href: '{{ author_homepage }}', type: 'text/html' }
     ],
