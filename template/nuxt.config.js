@@ -19,7 +19,8 @@ module.exports = {
   },
   modules: [
     '@nuxtjs/pwa',
-    '@nuxtjs/sitemap'
+    '@nuxtjs/sitemap',
+    [ '@nuxtjs/google-analytics', { ua: 'CHANGEME' } ]
   ],
   build: {
     postcss: {
@@ -47,16 +48,15 @@ module.exports = {
       { rel: 'me', href: '{{ author_homepage }}', type: 'text/html' }
     ],
     meta: [
-      { name: 'title', content: '{{ site_name }}' },
-      { name: 'description', content: '{{ site_description }}' },
+      { hid: 'description', name: 'description', content: '{{ site_description }}' },
       { name: 'theme-color', content: '#fff' },
-      { property: 'og:title', content: '{{ site_name }}' },
-      { property: 'og:description', content: '{{ site_description }}' },
-      { property: 'og:type', content: 'website' },
-      { property: 'og:image', content: '{{ site_domain }}/logo.png' },
+      { hid: 'og:title', property: 'og:title', content: '{{ site_name }}' },
+      { hid: 'og:description', property: 'og:description', content: '{{ site_description }}' },
+      { hid: 'og:type', property: 'og:type', content: 'website' },
+      { hid: 'og:image', property: 'og:image', content: '{{ site_domain }}/logo.png' },
       { property: 'og:locale', content: '{{ locale }}' },
       { property: 'og:site_name', content: '{{ site_name}}' },
-      { name: 'robots', content: 'noindex' }
+      { name: 'robots', content: 'index, follow' }
     ]
   },
   generate: {

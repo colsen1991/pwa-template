@@ -20,6 +20,7 @@
   "dependencies": {
     "@nuxtjs/pwa": "latest",
     "@nuxtjs/sitemap": "latest",
+    "@nuxtjs/google-analytics": "latest",
     "bulma": "latest",
     "nuxt": "latest",
     "whatwg-fetch": "latest"

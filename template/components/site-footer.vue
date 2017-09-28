@@ -4,7 +4,7 @@
       <div class="columns">
         <address class="column is-one-third has-text-centered-mobile">
           <p><strong>Kontaktinformasjon</strong></p>
-          <a href="https://goo.gl/maps/7TtrchACE7P2" target="noopener">
+          <a href="https://goo.gl/maps/7TtrchACE7P2" target="_blank" rel="noopener nofollow">
             GATADI 44S, 1337 Bodø
           </a>
           <br>
@@ -23,22 +23,22 @@
           <p><strong>Sosiale Medier</strong></p>
           <div class="level is-mobile">
             <div class="level-item">
-              <a href="https://twitter.com/" target="noopener">
+              <a href="https://twitter.com/" target="_blank" rel="noopener nofollow">
                 <b-icon class="icon" icon="twitter"/>
               </a>
             </div>
             <div class="level-item">
-              <a href="https://www.facebook.com/" target="noopener">
+              <a href="https://www.facebook.com/" target="_blank" rel="noopener nofollow">
                 <b-icon class="icon" icon="facebook"/>
               </a>
             </div>
             <div class="level-item">
-              <a href="https://www.linkedin.com/in/" target="noopener">
+              <a href="https://www.linkedin.com/in/" target="_blank" rel="noopener nofollow">
                 <b-icon class="icon" icon="linkedin"/>
               </a>
             </div>
             <div class="level-item">
-              <a href="https://github.com/" target="noopener">
+              <a href="https://github.com/" target="_blank" rel="noopener nofollow">
                 <b-icon class="icon" icon="github"/>
               </a>
             </div>
