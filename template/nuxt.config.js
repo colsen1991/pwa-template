@@ -34,7 +34,6 @@ module.exports = {
     ]
   },
   plugins: [
-    './plugins/buefy',
     './plugins/components'
   ],
   head: {
