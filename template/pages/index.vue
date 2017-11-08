@@ -76,3 +76,12 @@
     </section>
   </div>
 </template>
+
+<script>
+  export default {
+    head: {
+      title: 'Forsiden',
+      link: [ { hid: 'canonical', rel: 'canonical', href: 'https://www.christerolsen.me' } ]
+    }
+  }
+</script>

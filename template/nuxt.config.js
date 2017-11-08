@@ -2,8 +2,7 @@ const isStatic = !!process.env.STATIC
 
 module.exports = {
   css: [
-    { src: './assets/style/bulma-alterations.scss', lang: 'sass' },
-    { src: './assets/style/global.scss', lang: 'sass' }
+    { src: './assets/style/index.scss', lang: 'sass' }
   ],
   loading: {
     color: '#23d160'
@@ -34,13 +33,13 @@ module.exports = {
     ]
   },
   plugins: [
-    './plugins/components'
+    './plugins/components',
+    './plugins/lazyload'
   ],
   head: {
     htmlAttrs: { lang: '{{ locale }}' },
-    title: 'Forsiden',
     titleTemplate: '%s - {{ site_name }}',
-    script: [ { src: 'https://use.fontawesome.com/992cf8b5f9.js', type: 'text/javascript', async: true } ],
+    script: [ { src: 'https://use.fontawesome.com/49eb0234dd.js', type: 'text/javascript', async: true } ],
     link: [
       { rel: 'shortcut icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'author', href: '/humans.txt' },
@@ -61,6 +60,22 @@ module.exports = {
   generate: {
     async routes () {
       return []
+      /*
+      Start Example
+      return [
+        {
+          route: '/blog',
+          payload: blogPosts
+        },
+        ...blogPosts.map(({ slug }) => {
+          return {
+            route: `/blog/${slug}`,
+            payload: require(`./static/data/${slug}.json`)
+          }
+        })
+      ]
+      End Example
+      */
     }
   },
   sitemap: {
