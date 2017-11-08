@@ -33,8 +33,7 @@ module.exports = {
     ]
   },
   plugins: [
-    './plugins/components',
-    './plugins/lazyload'
+    './plugins/components'
   ],
   head: {
     htmlAttrs: { lang: '{{ locale }}' },

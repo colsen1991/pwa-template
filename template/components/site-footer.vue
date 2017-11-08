@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer section">
+  <footer class="footer">
     <div class="container">
       <div class="columns">
         <address class="column is-one-third has-text-centered-mobile">
