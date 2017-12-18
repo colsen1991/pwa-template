@@ -14,32 +14,28 @@
     "generate": "cross-env STATIC=true nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "precommit": "npm run lint",
-    "dato": "dato dump --token=TODO:CHANGEME",
-    "postdato": "rimraf dist && mkdir dist && ncp static/data dist/data"
+    "dato": "dato dump --token=TODO:CHANGEME"
   },
   "dependencies": {
-    "@nuxtjs/google-analytics": "^1.0.0",
-    "@nuxtjs/pwa": "^1.0.2",
+    "@nuxtjs/google-analytics": "^2.0.2",
+    "@nuxtjs/pwa": "^2.0.4",
     "@nuxtjs/sitemap": "^0.0.3",
     "bulma": "^0.6.0",
-    "nuxt": "^1.0.0-rc11",
-    "whatwg-fetch": "^2.0.3"
+    "nuxt": "^1.0.0-rc11"
   },
   "devDependencies": {
-    "babel-eslint": "^8.0.1",
+    "babel-eslint": "^8.0.3",
     "cross-env": "^5.0.5",
-    "datocms-client": "^0.3.28",
-    "eslint": "^4.7.2",
-    "eslint-config-standard": "^10.2.1",
+    "datocms-client": "^0.3.41",
+    "eslint": "^4.13.1",
+    "eslint-config-standard": "^11.0.0-beta.0",
     "eslint-loader": "^1.9.0",
-    "eslint-plugin-html": "^3.2.1",
+    "eslint-plugin-html": "^4.0.1",
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-node": "^5.1.1",
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^3.0.1",
-    "ncp": "^2.0.0",
-    "node-sass": "^4.5.3",
-    "rimraf": "^2.6.2",
+    "node-sass": "^4.7.2",
     "sass-loader": "^6.0.6"
   }
 }

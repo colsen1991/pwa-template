@@ -28,9 +28,7 @@ module.exports = {
       }
     },
     extractCSS: true,
-    vendor: [
-      'whatwg-fetch'
-    ]
+    vendor: []
   },
   plugins: [
     './plugins/components'
@@ -57,25 +55,7 @@ module.exports = {
     ]
   },
   generate: {
-    async routes () {
-      return []
-      /*
-      Start Example
-      return [
-        {
-          route: '/blog',
-          payload: blogPosts
-        },
-        ...blogPosts.map(({ slug }) => {
-          return {
-            route: `/blog/${slug}`,
-            payload: require(`./static/data/${slug}.json`)
-          }
-        })
-      ]
-      End Example
-      */
-    }
+    routes: []
   },
   sitemap: {
     path: '/sitemap.xml',
@@ -83,5 +63,8 @@ module.exports = {
     cacheTime: 1000 * 60 * 15,
     generate: isStatic,
     routes: []
+  },
+  workbox: {
+    handleFetch: isStatic
   }
 }
