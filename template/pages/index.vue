@@ -81,7 +81,7 @@
   export default {
     head: {
       title: 'Forsiden',
-      link: [ { hid: 'canonical', rel: 'canonical', href: 'https://www.christerolsen.me' } ]
+      link: [ { hid: 'canonical', rel: 'canonical', href: '{{ site_domain }}' } ]
     }
   }
 </script>
