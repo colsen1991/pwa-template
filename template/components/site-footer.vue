@@ -23,24 +23,19 @@
           <p><strong>Sosiale Medier</strong></p>
           <div class="level is-mobile">
             <div class="level-item">
-              <a href="https://twitter.com/" target="_blank" rel="noopener nofollow">
-                <b-icon class="icon" icon="twitter"/>
-              </a>
+              <span class="icon is-medium">
+                  <i class="fab fa-twitter is-size-3"></i>
+                </span>
             </div>
             <div class="level-item">
-              <a href="https://www.facebook.com/" target="_blank" rel="noopener nofollow">
-                <b-icon class="icon" icon="facebook"/>
-              </a>
+              <span class="icon is-medium">
+                  <i class="fab fa-facebook is-size-3"></i>
+                </span>
             </div>
             <div class="level-item">
-              <a href="https://www.linkedin.com/in/" target="_blank" rel="noopener nofollow">
-                <b-icon class="icon" icon="linkedin"/>
-              </a>
-            </div>
-            <div class="level-item">
-              <a href="https://github.com/" target="_blank" rel="noopener nofollow">
-                <b-icon class="icon" icon="github"/>
-              </a>
+              <span class="icon is-medium">
+                  <i class="fab fa-instagram is-size-3"></i>
+                </span>
             </div>
           </div>
         </div>

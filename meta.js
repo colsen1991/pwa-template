@@ -49,7 +49,7 @@ module.exports = {
     locale: {
       'type': 'string',
       'message': 'Locale',
-      'default': 'nb'
+      'default': 'nb-NO'
     },
 
   },

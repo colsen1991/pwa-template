@@ -31,16 +31,16 @@ module.exports = {
     vendor: []
   },
   plugins: [
-    './plugins/components'
+    './plugins/components',
+    './plugins/lazyload'
   ],
   head: {
     htmlAttrs: { lang: '{{ locale }}' },
     titleTemplate: '%s - {{ site_name }}',
-    script: [ { src: 'https://use.fontawesome.com/49eb0234dd.js', type: 'text/javascript', async: true } ],
+    script: [ { src: 'https://use.fontawesome.com/releases/v5.0.6/js/all.js', type: 'text/javascript', async: true } ],
     link: [
       { rel: 'shortcut icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'author', href: '/humans.txt' },
-      { rel: 'me', href: '{{ author_homepage }}', type: 'text/html' }
     ],
     meta: [
       { hid: 'description', name: 'description', content: '{{ site_description }}' },
@@ -49,7 +49,7 @@ module.exports = {
       { hid: 'og:description', property: 'og:description', content: '{{ site_description }}' },
       { hid: 'og:type', property: 'og:type', content: 'website' },
       { hid: 'og:image', property: 'og:image', content: '{{ site_domain }}/logo.png' },
-      { property: 'og:locale', content: '{{ locale }}' },
+      { hid: 'twitter:image', property: 'twitter:image', content: '{{ site_domain }}/logo.png' },
       { property: 'og:site_name', content: '{{ site_name}}' },
       { name: 'robots', content: 'index, follow' }
     ]
@@ -62,7 +62,10 @@ module.exports = {
     hostname: '{{ site_domain }}',
     cacheTime: 1000 * 60 * 15,
     generate: isStatic,
-    routes: []
+    routes: [],
+    exclude: [
+      '/404'
+    ]
   },
   workbox: {
     handleFetch: isStatic
