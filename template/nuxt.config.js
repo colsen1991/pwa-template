@@ -32,6 +32,7 @@ module.exports = {
   },
   plugins: [
     './plugins/components',
+    './plugins/responsive',
     './plugins/lazyload'
   ],
   head: {
