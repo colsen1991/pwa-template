@@ -1,4 +1,5 @@
-const isStatic = !!process.env.STATIC
+const isStatic = process.env.STATIC === 'true'
+const isStaging = process.env.STAGING === 'true'
 
 module.exports = {
   css: [
@@ -16,10 +17,16 @@ module.exports = {
     theme_color: '#fff',
     background_color: '#fff'
   },
-  modules: [
+  modules:  isStaging ? [
     '@nuxtjs/pwa',
     '@nuxtjs/sitemap',
-    [ '@nuxtjs/google-analytics', { ua: 'CHANGEME' } ]
+    '@nuxtjs/axios',
+    '@nuxtjs/auth',
+    ['@nuxtjs/google-analytics', {ua: isStaging ? 'STAGING' : 'CHANGEME'}]
+  ] : [
+    '@nuxtjs/pwa',
+    '@nuxtjs/sitemap',
+    ['@nuxtjs/google-analytics', {ua: isStaging ? 'STAGING' : 'CHANGEME'}]
   ],
   build: {
     postcss: {
@@ -52,7 +59,7 @@ module.exports = {
       { hid: 'og:image', property: 'og:image', content: '{{ site_domain }}/logo.png' },
       { hid: 'twitter:image', property: 'twitter:image', content: '{{ site_domain }}/logo.png' },
       { property: 'og:site_name', content: '{{ site_name}}' },
-      { name: 'robots', content: 'index, follow' }
+      { name: 'robots', content: isStaging ? 'noindex, nofollow' : 'index, follow' }
     ]
   },
   generate: {
@@ -65,10 +72,23 @@ module.exports = {
     generate: isStatic,
     routes: [],
     exclude: [
-      '/404'
+      '/404',
+      'login',
+      'logout'
     ]
   },
   workbox: {
     handleFetch: isStatic
-  }
+  },
+  router: isStaging ? {
+    middleware: ['auth']
+  } : undefined,
+  auth: isStaging ? {
+    strategies: {
+      auth0: {
+        domain: 'TODO:CHANGEME',
+        client_id: 'TODO:CHANGEME'
+      }
+    }
+  } : undefined
 }

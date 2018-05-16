@@ -24,18 +24,18 @@
           <div class="level is-mobile">
             <div class="level-item">
               <span class="icon is-medium">
-                  <i class="fab fa-twitter is-size-3"></i>
-                </span>
+                <i class="fab fa-twitter is-size-3"></i>
+              </span>
             </div>
             <div class="level-item">
               <span class="icon is-medium">
-                  <i class="fab fa-facebook is-size-3"></i>
-                </span>
+                <i class="fab fa-facebook is-size-3"></i>
+              </span>
             </div>
             <div class="level-item">
               <span class="icon is-medium">
-                  <i class="fab fa-instagram is-size-3"></i>
-                </span>
+                <i class="fab fa-instagram is-size-3"></i>
+              </span>
             </div>
           </div>
         </div>
@@ -57,7 +57,7 @@
       <hr class="is-hidden-tablet">
 
       <p class="has-text-centered">&copy; {{new Date().getFullYear()}} YOUR NAME</p>
-      <p class="has-text-centered"><a class="has-text-grey" href="/sitemap.xml">SITEMAP</a></p>
+      <p class="has-text-centered is-size-7"><a class="has-text-grey" href="">Utviklet av Vindir</a></p>
     </div>
   </footer>
 </template>

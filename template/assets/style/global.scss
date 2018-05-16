@@ -4,14 +4,16 @@ body {
 
 main {
   min-height: 64vh;
+  /*margin-top: 64px;*/
 }
 
 * {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 h1, h2, h3, h4, h5, .title, .subtitle {
-  font-family: 'Saira', sans-serif !important;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bolder;
 }
 
 .text-script {

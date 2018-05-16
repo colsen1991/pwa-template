@@ -3,16 +3,16 @@
     <div class="container">
       <div class="navbar-brand">
         <nuxt-link class="navbar-item" to="/">
-          <img aria-label="Logo" alt="Site Logo" v-lazy="'/logo.png'">
+          <img alt="TODO" title="TODO" src="/logo.png">
         </nuxt-link>
 
         <span class="navbar-burger"
-             :class="{'is-active': showNavbarMenu}"
-             :title="`${showNavbarMenu ? 'Skjul' : 'Vis'} navigasjonsmeny`"
-             role="button"
-             tabindex="0"
-             @click="toggleNavbarMenu"
-             @keydown.enter="toggleNavbarMenu">
+              :class="{'is-active': showNavbarMenu}"
+              :title="`${showNavbarMenu ? 'Skjul' : 'Vis'} navigasjonsmeny`"
+              role="button"
+              tabindex="0"
+              @click="toggleNavbarMenu"
+              @keydown.enter="toggleNavbarMenu">
           <span></span>
           <span></span>
           <span></span>

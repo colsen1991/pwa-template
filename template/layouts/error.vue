@@ -1,39 +1,25 @@
 <template>
-  <section>
-    <page-header class="container content has-text-centered">
-      <h1>Ukjent Feil</h1>
-    </page-header>
-    <div class="hero">
-      <div class="hero-body">
-        <div class="container content has-text-centered">
-          <p>Usikker på hvordan dette gikk til...</p>
-          <p>Beklager det!</p>
-          <nuxt-link to="/">Tilbake til forsiden</nuxt-link>
-        </div>
+  <section class="hero is-fullheight">
+    <div class="hero-body">
+      <div class="container is-medium content has-text-centered">
+        <h1 class="is-size-1 is-size-2-mobile">Ukjent feil</h1>
+        <p>Ikke helt sikker på hva som skjedde...</p>
+        <p>Beklager det!</p>
+        <nuxt-link to="/" class="button is-link is-large">Tilbake til forsiden</nuxt-link>
       </div>
     </div>
   </section>
 </template>
 
 <script>
-  // import generelt from '../static/data/generelt.json'
-
   export default {
-    data () {
-      return {}
-    },
     head () {
       return {
-        /*
-        title: 'Ukjent feil',
+        title: 'Ukjent feil | TODO',
         meta: [
-          { hid: 'og:title', property: 'og:title', content: `Ukjent feil - ${this.tittel}` },
-          { hid: 'description', name: 'description', content: '' },
-          { hid: 'og:description', property: 'og:description', content: '' },
-          { hid: 'og:image', property: 'og:image', content: this.bilde.url },
-          { hid: 'twitter:image', property: 'twitter:image', content: this.bilde.url }
+          { hid: 'og:title', property: 'og:title', content: 'Ukjent feil | TODO' },
+          { name: 'robots', content: 'noindex, nofollow' }
         ]
-        */
       }
     }
   }
